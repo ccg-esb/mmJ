@@ -14,7 +14,7 @@ Wang, P. et al. _Robust growth of Escherichia coli_. Curr Biol 20, 1099–103 (2
 
 This distribution is dated December 11th, 2013.  It includes the source files, along with a jar file that contains the precompiled classes.
 
-MMJ has been written as a plugin for ImageJ. Please read the [[http://imagejdocu.tudor.lu/doku.php?id=howto:plugins:how_to_install_a_plugin|ImageJ documentation]] to learn how to install plugins.
+MMJ has been written as a plugin for ImageJ. Please read the [documentation](http://imagejdocu.tudor.lu/doku.php?id=howto:plugins:how_to_install_a_plugin) to learn how to install plugins.
 
 ##  II. Technical Explanations
 

@@ -12,11 +12,7 @@ Wang, P. et al. _Robust growth of Escherichia coli_. Curr Biol 20, 1099–103 (2
 
 ##  I. Download 
 
-
-This distribution is dated December 11th, 2012.  It includes the source files, along with a jar file that contains the precompiled classes.
-
-  * [[http://www.penamiller.com/mmj/public/MMJ_.jar| MMJ_.jar]]
-  * Source code is available {{:mmj_v3_1_src.zip| here}}
+This distribution is dated December 11th, 2013.  It includes the source files, along with a jar file that contains the precompiled classes.
 
 MMJ has been written as a plugin for ImageJ. Please read the [[http://imagejdocu.tudor.lu/doku.php?id=howto:plugins:how_to_install_a_plugin|ImageJ documentation]] to learn how to install plugins.
 
@@ -91,7 +87,6 @@ This program is free software; you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. 
 
 ## VI. Changelog
-
 
   * 2011/12/04: Detect and track mother cells
   * 2011/12/12: Extract GFP intensities

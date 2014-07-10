@@ -1,4 +1,4 @@
-mother-machine-analyzer
+mmJ::mother-machine-analyzer
 =======================
 
 ##  General Description

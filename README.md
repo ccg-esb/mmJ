@@ -4,11 +4,10 @@ mmJ [mother-machine-analyzer]
 ##  General Description
 
 
-This ImageJ plugin is a semi-automatic tool to track cells and measure the fluorescent protein expression level from time-lapse movies of a microfluidic continuous culture device adapted from:
-
-Wang, P. et al. _Robust growth of Escherichia coli_. Curr Biol 20, 1099–103 (2010).
+This ImageJ plugin is a semi-automatic tool to track cells and measure the fluorescent protein expression level from time-lapse movies of a microfluidic continuous culture device.
 
 ![](http://penamiller.com/mmj/lib/exe/fetch.php?w=500&tok=219a99&media=mmj_panel.png)
+Image credit: Markus Arnoldini and Martin Ackermann (ETH Zurich/EAWAG)
 
 ##  I. Download 
 

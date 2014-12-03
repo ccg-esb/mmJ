@@ -167,8 +167,8 @@ public class mmJCell{
 
 
 	public void track(int max_levels){   //JUST THE MOTHER!
-		String binary_cell=toBinary((long)id_cell);
-		if(DEBUG) IJ.log("\nTracking mother cell "+id_cell+" ("+binary_cell+") from frame "+(frameBorn+1)+" left_pole="+left_pole);
+		//String binary_cell=toBinary((long)id_cell);
+		if(DEBUG) IJ.log("\nTracking mother cell "+id_cell+" from frame "+(frameBorn));
 		
 		//First define -1 the frames before the cell was born
 		for(int z=0; z<frameBorn; z++){
@@ -436,7 +436,7 @@ public class mmJCell{
 		int [] offset_y=convert_integers(listOffset_y);
 		
 		ImageStack istack_original = imp_original.getImageStack();
-		for (int z = 0; z < y1s.size(); z++){
+		for (int z = frameBorn; z < y1s.size(); z++){
 				ImageProcessor ipz=istack_original.getProcessor(z+1);
 				
 				int y1=((Integer)y1s.elementAt(z)).intValue();
@@ -691,7 +691,7 @@ public class mmJCell{
 		
 		for(int k=0; k<numDaughters; k++){
 			mmJCell d = (mmJCell)daughters.get(k);
-			String binary_cell_daughter=toBinary((long)d.get_id_cell());
+			//String binary_cell_daughter=toBinary((long)d.get_id_cell());
 			if(level<max_levels  || max_levels<0){ 
 				d.export_data(max_levels, rt);
 			}
@@ -701,6 +701,10 @@ public class mmJCell{
 	}	
 	
 	/***********************  Get/set functions */
+	
+	public void set_birthframe(int fB){
+		frameBorn=fB;
+	}
 	
 	public void set_breakpoints(ArrayList<mmJBreakpoints> breakpoints){
 		this.breakpoints=breakpoints;

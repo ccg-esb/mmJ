@@ -158,7 +158,7 @@ public class mmJBreakpoints{
         while(ix.hasNext()) {		
        		Integer bpoint=(Integer)ix.next();
        		if(ix!=null){
-	       		ret+=" "+(440-bpoint.intValue());
+	       		ret+=" "+(bpoint.intValue());
        		}
         }
 		return ret;

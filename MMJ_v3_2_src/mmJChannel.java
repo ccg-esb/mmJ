@@ -601,11 +601,21 @@ public class mmJChannel{
 	
 	public void trackChannel(){
 	
-		int fromSlice=0;  //param?
 		cells = new ArrayList<mmJCell>(); //Re-do everything
 		int id_cell=id_channel+1;
 		mmJCell mother=new mmJCell(id_cell, w, h);
 		mother.set_level(0);
+		
+		//Find birth-frame (from v3.2)
+		int frameBorn=0;
+		for(int slice=1; slice<=numSlices; slice++){
+			mmJBreakpoints bPoint=breakpoints.get(slice-1);
+			if(bPoint.getNumBreakpoints()>0 && frameBorn==0){
+				frameBorn=slice;
+			}
+		}
+		mother.set_birthframe(frameBorn);		
+		
 		mother.set_breakpoints(breakpoints);
 		mother.track(max_levels);
 		

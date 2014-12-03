@@ -12,7 +12,7 @@ _Image credit: Markus Arnoldini and Martin Ackermann (ETH Zurich/EAWAG)_
 
 ##  I. Download 
 
-This distribution is dated December 11th, 2013.  It includes the source files, along with a jar file that contains the precompiled classes.
+This distribution is dated December 3th, 2014.  It includes the source files, along with a jar file that contains the precompiled classes.
 
 MMJ has been written as a plugin for ImageJ. Please read the [documentation](http://imagejdocu.tudor.lu/doku.php?id=howto:plugins:how_to_install_a_plugin) to learn how to install plugins.
 
@@ -101,3 +101,4 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
   * 2012/08/02: Corrected bug that crashed the plugin after converting String ID into numerical index.  Cell index is now just an increasing number.
   * 2013/12/11: Implemented manual correction of segmentation in a time-series montage of each channel.
   * 2013/12/11: Now a mother cell doesn't need to be in the bottom of the channel. Empty cells can be defined in the segmentation file by including an '*' between breakpoints.
+  * 2014/12/03: Now tracking of a given cell doesn't need to start in frame 1.
